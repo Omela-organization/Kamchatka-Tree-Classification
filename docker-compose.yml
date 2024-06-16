@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  script:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: monitoring_tree
+    restart: always
+    command: python3 main.py
+
